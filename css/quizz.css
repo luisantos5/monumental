@@ -1,0 +1,39 @@
+#divQuestionTwo {
+    display: none;
+}
+
+#divQuestionThree {
+    display: none;
+}
+
+#divQuestionFour {
+    display: none;
+}
+
+#divScore {
+    display: none;
+}
+
+img {
+    width:100%;
+    max-height:200px;
+    max-width:200px;
+}
+
+.jumbotron {
+    background-color: lightblue !important;
+}
+
+.btn {
+    background-color: #1dc6b8 !important;
+    border: none !important;
+}
+
+body {
+    background-color: lightblue !important;
+}
+
+#timer{
+    color: rgb(196, 83, 8);
+    font-size: 25px;
+}

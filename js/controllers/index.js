@@ -2,10 +2,11 @@ import { mons } from "../models/main.js"
 
 const myCatalog = document.querySelector("#myCatalog")
 const btnFilter = document.querySelector("#btnFilter")
-btnFilter.addEventListener("click", function(){
+btnFilter.addEventListener("click", function(event){
     const txtName = document.querySelector("#txtName").value 
     const sltCountry = document.querySelector("#sltCountry").value
     renderCatalog(txtName, sltCountry)
+    event.preventDefault()
 })
 
 renderCatalog()

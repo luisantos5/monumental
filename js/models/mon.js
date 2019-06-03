@@ -2,7 +2,8 @@
  * Classe para modelar um monumento
  */
  export default class Mon {
-     constructor(name, country, description, photo, video) {
+     constructor(idMon, name, country, description, photo, video) {
+         this.idMon = idMon
          this.name = name
          this.country = country
          this.description = description

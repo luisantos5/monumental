@@ -11,11 +11,11 @@ form.addEventListener("submit", function(event){
     const txtPhoto = document.querySelector("#txtPhoto").value
     const txtVideo = document.querySelector("#txtVideo").value
     
-    console.log("random")
+    
     event.preventDefault()
     //addBand(txtName, sltGenre, txtDescription, txtPhoto, txtVideo)
     addMon(getLastId() + 1, txtName,sltCountry,txtDescription, txtPhoto, txtVideo)
-    console.log("random")
+    
    
 })
 

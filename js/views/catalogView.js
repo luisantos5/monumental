@@ -81,7 +81,7 @@ document.querySelector("#btnFilter").addEventListener("click", function () {
     const txtMon = document.querySelector("#txtMon").value
     const sltGenre = document.querySelector("#sltGenre").value
     // Chama a função responsável pela exibição do catálogo com os filtros respetivos
-    renderCatalog(txtBand, sltGenre)
+   // renderCatalog(txtBand, sltGenre)
 })
 
 // Clique no botão de ordenação

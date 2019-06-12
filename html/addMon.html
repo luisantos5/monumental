@@ -40,18 +40,41 @@
                 <hr class="my-2">
                 <p>
                     <form id="frmAddMon">
-
-
+                        <div class="form-group">
+                            <label for="txtName">Nome: </label>
+                            <input type="text" class="form-control col-sm-8" name="" id="txtName"
+                                placeholder="Nome do Monumento" required>
+                        </div>
 
                         <div class="form-group">
-                            <label for="txtName" >Nome do Monumento:</label>
-                            <input type="text" class="form-control" name="" id="txtName" >
-
+                            <label for="">Tipo de Monumento: </label>
                         </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="sltHistoric" value="historic">
+                            <label class="form-check-label" for="sltHistoric">Histórico</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="sltReligious" value="religious">
+                            <label class="form-check-label" for="sltReligious">Religioso</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="sltOther" value="other">
+                            <div>
+                                <label class="form-check-label" for="sltOther">Outro: </label>
+                            </div>
+                            <input type="text" class="form-control col-sm-8" name="" id="txtOtherName"
+                                placeholder="Qual?" disabled>
+                            <!--falta abilitar autimaticamente a o iput de txt txtOtherName -->
+                        </div>
+                        <br>
+                        <br>
+
+
                         <div class="form-group">
                             <label for="sltCountry">País:</label>
-                            <select class="form-control" id="sltCountry">
-                                <option value="" selected>Todos</option>
+                            <select class="form-control col-sm-4" id="sltCountry" required>
+                                <option value="" selected></option>
                                 <option value="África do Sul">África do Sul</option>
                                 <option value="Albânia">Albânia</option>
                                 <option value="Alemanha">Alemanha</option>
@@ -230,29 +253,42 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="txtCity">Cidade: </label>
+                            <input type="text" class="form-control col-sm-4" name="" id="txtCity">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtDate">Data de Construção: </label>
+                            <input class="form-control col-sm-2" type="date" value="" id="txtDate">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtConstName">Construída por: </label>
+                            <input type="text" class="form-control col-sm-4" name="" id="txtConstName"
+                                placeholder="Nome do Responsável">
+                        </div>
+
+
+
+                        <div class="form-group">
                             <label for="txtDescription">Descrição:</label>
-                            <textarea class="form-control" id="txtDescription" rows="3"></textarea>
+                            <textarea class="form-control" id="txtDescription" rows="4"></textarea>
                         </div>
 
                         <div class="form-group">
-                            <label for="txtPhoto">Fotografia:</label>
-                            <input type="url" class="form-control" id="txtPhoto">
-
+                            <label for="txtCuriosities">Curiosidades: </label>
+                            <textarea class="form-control" id="txtCuriosities" rows="1"></textarea>
                         </div>
 
                         <div class="form-group">
-                            <label for="txtVideo">Video:</label>
-                            <input type="url" class="form-control" id="txtVideo">
+                            <label for="txtPhoto">Fotografias:</label>
+                            <input type="url" class="form-control" id="txtPhoto"
+                                placeholder="Introduza o endereço da fotografia" required>
 
                         </div>
-
                         <button type="submit" class="btn btn-primary">Submeter</button>
                         <button type="reset" class="btn btn-danger">Limpar</button>
-
-
                     </form>
-
-
                 </p>
                 <hr class="my-2">
 
